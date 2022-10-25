@@ -1,4 +1,4 @@
-function [y,n] = sigmult (x1, n1, x2, n2)
+function [y,n] = multis (x1, n1, x2, n2)
   n=min(min(n1),min(n2)):max(max(n1),max(n2));
   y1=zeros(1,length(n));
   y2=y1;
