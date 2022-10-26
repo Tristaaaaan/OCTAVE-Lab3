@@ -24,8 +24,8 @@ z=[1,2,4,6,5,6,2,-1,-3,-2];
 
 %Whole Equation
 [x4,n4]=sigadd(x1,n1,x2,n2);
-[x5,n5]=sigadd(x4,n4,x3,n3);
+[x4,n4]=sigadd(x4,n4,x3,n3);
 
 %Plot
-subplot(1,1,1),stem(n5,x5),title('x[n-2]+2y[n+5]+2z[n-1]'),grid on;
+subplot(1,1,1),stem(n4,x4),title('x[n-2]+2y[n+5]+2z[n-1]'),grid on;
 

@@ -23,7 +23,7 @@ x1=2*x;
 
 %Whole Equation
 [x4,n4]=sigmult(x2,n2,x3,n3);
-[x5,n5]=sigadd(x1,range1,x4,n4);
+[x4,n4]=sigadd(x1,range1,x4,n4);
 
 %Plot
-subplot(1,1,1),stem(n5,x5),title('2x[n]+3y[-n]*z[n+2]'),grid on;
+subplot(1,1,1),stem(n4,x4),title('2x[n]+3y[-n]*z[n+2]'),grid on;
