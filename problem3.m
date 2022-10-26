@@ -1,5 +1,5 @@
 clc;
-%clf;
+clf;
 clear all;
 close all;
 pkg load signal;
@@ -10,15 +10,15 @@ x=[5,-1,4,-7,8,2,1,0,-2];
 
 %Prob 2
 [x1,n1]=ups(x,-2,6,2);
-[x1,n1]=fold(x1,n1);
-[x1,n1]=shift(x1,n1,-2);
+[x1,n1]=folding(x1,n1);
+[x1,n1]=sigshift(x1,n1,-2);
 
 %Prob 3
-[x2,n2]=fold(x,n);
-[x2,n2]=shift(x2,n2,1);
+[x2,n2]=folding(x,n);
+[x2,n2]=sigshift(x2,n2,1);
 
 %Prob 4
-[x3,n3]=shift((3*x),n,2);
+[x3,n3]=sigshift((3*x),n,2);
 
 %Plots
 subplot(2,2,1),stem(n,x),title('x[n]'),grid on;
